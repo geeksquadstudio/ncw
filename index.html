@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8 0%, #e8edf3 100%);
+            color: #1a202c;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 1.5rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.03);
+            transition: all 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .card-header {
+            background: linear-gradient(45deg, #c3dafe, #a7c0f0);
+            color: #1f2937;
+            padding: 1.5rem 2rem;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .item-label {
+            font-weight: 600;
+            color: #4a5568;
+        }
+        .item-value {
+            color: #2d3748;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="text-center py-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">Nyein Chan Wai Personal Info</h1>
+            <p class="mt-2 text-lg text-gray-500">A clean overview of personal details for UK Visa.</p>
+        </header>
+
+        <!-- Personal Info Card -->
+        <div class="card my-8">
+            <div class="card-header">
+                <h2 class="text-2xl font-bold">Personal & Visa Info</h2>
+            </div>
+            <div class="card-body grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12">
+                <div>
+                    <div class="item-label">Name</div>
+                    <div class="item-value font-medium text-lg">Mr. Nyein Chan Wai</div>
+                </div>
+                <div>
+                    <div class="item-label">Passport Number</div>
+                    <div class="item-value text-lg">MI020930</div>
+                </div>
+                <div>
+                    <div class="item-label">Phone No</div>
+                    <div class="item-value">+66 6 22904466</div>
+                </div>
+                <div>
+                    <div class="item-label">Email</div>
+                    <div class="item-value">nyeinchanwai.mm@gmail.com</div>
+                </div>
+                <div>
+                    <div class="item-label">Relationship Status</div>
+                    <div class="item-value">Single</div>
+                </div>
+                <div>
+                    <div class="item-label">NRC No</div>
+                    <div class="item-value">9/AHMAZA(N)049026</div>
+                </div>
+                <div>
+                    <div class="item-label">Departure to UK</div>
+                    <div class="item-value">November 9, 2025</div>
+                </div>
+                <div>
+                    <div class="item-label">Departure from UK</div>
+                    <div class="item-value">Around November 30, 2025</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Address Info Card -->
+        <div class="card my-8">
+            <div class="card-header">
+                <h2 class="text-2xl font-bold">Address Info</h2>
+            </div>
+            <div class="card-body space-y-8">
+                <div>
+                    <div class="item-label text-xl">Current Address in Thailand</div>
+                    <div class="item-value text-gray-700">48/49 Baan Klang Muang Rama 9 Soi 43, Suan Luang, Suan Luang, Bangkok, Thailand, 10250</div>
+                    <div class="mt-1 text-sm text-gray-500">
+                        <span class="mr-6">Duration: 1 Year</span>
+                        <span>Property Type: Rent</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-label text-xl">Former Address in Myanmar</div>
+                    <div class="item-value text-gray-700">SALANE (10), 71(A) Street, Between 71 & 72, Between 109 & 110, Chan Mya Thar Zi Township, Mandalay, Myanmar.</div>
+                    <div class="mt-1 text-sm text-gray-500">
+                        <span class="mr-6">Duration: 8 Years</span>
+                        <span>Property Type: Owned by me</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parent Info Card -->
+        <div class="card my-8">
+            <div class="card-header">
+                <h2 class="text-2xl font-bold">Parent Info</h2>
+            </div>
+            <div class="card-body grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12">
+                <div>
+                    <div class="item-label">Father Name</div>
+                    <div class="item-value font-medium">Thu Lat Wai</div>
+                </div>
+                <div>
+                    <div class="item-label">Father Date of Birth</div>
+                    <div class="item-value">May 6, 1977</div>
+                </div>
+                <div>
+                    <div class="item-label">Father Ethnicity</div>
+                    <div class="item-value">Burma</div>
+                </div>
+                <div>
+                    <div class="item-label">Mother Name</div>
+                    <div class="item-value">Myint Li</div>
+                </div>
+                <div>
+                    <div class="item-label">Mother Date of Birth</div>
+                    <div class="item-value">December 8, 1976</div>
+                </div>
+                <div>
+                    <div class="item-label">Mother Ethnicity</div>
+                    <div class="item-value">Shan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job & Salary Info Card -->
+        <div class="card my-8">
+            <div class="card-header">
+                <h2 class="text-2xl font-bold">Job & Salary Info</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 mb-8">
+                    <div>
+                        <div class="item-label">Current Job Title</div>
+                        <div class="item-value font-medium">Director (acting as Product Manager)</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Current Job Start Date</div>
+                        <div class="item-value">December 16, 2022</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Company Name</div>
+                        <div class="item-value">SUDO KACHA COMPANY LIMITED</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Company Address</div>
+                        <div class="item-value">98/5, Mu 1, Saraphi Sub-district, Saraphi District, Chiang Mai Province</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Company Phone Number</div>
+                        <div class="item-value">+66 6 22904466</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Monthly Income</div>
+                        <div class="item-value">GBP 2,300 (THB 100,000)</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Monthly Expense</div>
+                        <div class="item-value">GBP 1,500 (THB 65,000)</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Previous Jobs</div>
+                        <div class="item-value">I4B Solutions Company Limited</div>
+                    </div>
+                    <div>
+                        <div class="item-label">Other Income</div>
+                        <div class="item-value">No</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="item-label text-xl mb-4">Job Duties</div>
+                    <ul class="list-none space-y-3 pl-0 text-gray-700">
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#6190e8] rounded-full"></span>
+                            <span>Oversee business operations and strategic direction of the company.</span>
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#6190e8] rounded-full"></span>
+                            <span>Define product vision and strategy for software development projects.</span>
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#6190e8] rounded-full"></span>
+                            <span>Manage product roadmaps, backlogs, and prioritize features in alignment with business goals.</span>
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#6190e8] rounded-full"></span>
+                            <span>Collaborate with cross-functional teams (developers, operations, and business units) to deliver digital solutions.</span>
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#6190e8] rounded-full"></span>
+                            <span>Gather requirements from stakeholders and translate them into actionable user stories.</span>
+                        </li>
+                        <li class="relative pl-4">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-[#6190e8] rounded-full"></span>
+                            <span>Monitor product performance, analyze feedback, and propose improvements.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel History Card -->
+        <div class="card my-8">
+            <div class="card-header">
+                <h2 class="text-2xl font-bold">Travel History</h2>
+            </div>
+            <div class="card-body space-y-6">
+                <!-- Item 1 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Hong Kong, China</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Dec 1, 2019 - Dec 7, 2019</span> | 
+                            <span>7 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business Conference</div>
+                </div>
+                <!-- Item 2 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Bangkok, Thailand</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Nov 17, 2021 - Jan 12, 2023</span> | 
+                            <span>422 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+                <!-- Item 3 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Savannakhet, Laos</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Jan 12, 2023 - Jan 13, 2023</span> | 
+                            <span>1 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Visit</div>
+                </div>
+                <!-- Item 4 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Bangkok, Thailand</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Jan 13, 2023 - Mar 16, 2023</span> | 
+                            <span>63 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+                <!-- Item 5 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Phnom Penh, Cambodia</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Mar 16, 2023 - Jun 8, 2023</span> | 
+                            <span>85 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+                <!-- Item 6 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Bangkok, Thailand</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Jun 8, 2023 - Apr 13, 2024</span> | 
+                            <span>311 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+                <!-- Item 7 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Shanghai, China</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Apr 14, 2024 - Apr 21, 2024</span> | 
+                            <span>7 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business Conference</div>
+                </div>
+                <!-- Item 8 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Bangkok, Thailand</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Apr 21, 2024 - Jul 29, 2025</span> | 
+                            <span>465 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+                <!-- Item 9 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Hanoi, Vietnam</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Jul 29, 2025 - Aug 3, 2025</span> | 
+                            <span>6 Days</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Visit</div>
+                </div>
+                <!-- Item 10 -->
+                <div class="p-5 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <span class="text-xl font-medium text-gray-800">Bangkok, Thailand</span>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500">
+                            <span>Aug 3, 2025 - Today</span> | 
+                            <span>Still Counting</span>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
