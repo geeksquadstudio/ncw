@@ -48,14 +48,36 @@
             color: #2d3748;
             margin-top: 0.25rem;
         }
+        .download-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: #f7fafc;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .download-item:hover {
+            background-color: #edf2f7;
+        }
+        .download-item a {
+            text-decoration: none;
+            color: inherit;
+            flex-grow: 1;
+        }
+        .download-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            color: #4a5568;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <header class="text-center py-8">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">Nyein Chan Wai Personal Info</h1>
-            <p class="mt-2 text-lg text-gray-500">A clean overview of personal details for UK Visa.</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">Personal Info Dashboard</h1>
+            <p class="mt-2 text-lg text-gray-500">A professional and clean overview of your personal details.</p>
         </header>
 
         <!-- Personal Info Card -->
@@ -348,6 +370,63 @@
                         </div>
                     </div>
                     <div class="text-sm text-gray-600 mt-2">Reason: Business</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources to Download Card -->
+        <div class="card my-8">
+            <div class="card-header">
+                <h2 class="text-2xl font-bold">Resources to Download</h2>
+            </div>
+            <div class="card-body space-y-4">
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/1f8aYnqOq0siOM24E22ojmZJKMBFhTFXq/view?usp=drive_link" target="_blank" rel="noopener noreferrer">UOB Bank Certificate and Statement</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/1AdktiBGjNuO37yMVIHpx1XwHB6W3a-XZ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Current Passport</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/1BStVDJaCJQleYp3FrtLLp6aM2NOYlxQj/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Old Passport</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/19j8_3v_S9HRi35h7GlqbVzhKp5tQlpIu/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Thailand Work Permit</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/15OI75GhxXs7PSCWIHA00abJxgrfKAFzA/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Myanmar NRC</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/1h9bDry7rrZax51cFaft5BolVZnUFu1LY/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Myanmar House Hold Registration</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/1-65YRZtjD35tZPgjfxge13oYvBMzvqz1/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Bachelor Degree</a>
+                </div>
+                <div class="download-item">
+                    <svg class="download-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <a href="https://drive.google.com/file/d/1JPs7xl1ZmPcw2lqZAwsFLbAc3d6Y0A9v/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Certificate of Business Registration</a>
                 </div>
             </div>
         </div>
